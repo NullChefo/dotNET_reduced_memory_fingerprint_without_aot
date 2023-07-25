@@ -14,7 +14,8 @@ RUN dotnet build "DOT_NET_DOCKER_SIZE_NOT_AOT.csproj" -c Release -o /app/build
 
 FROM build AS publish
 # /p:UseAppHost=false
-RUN dotnet publish "DOT_NET_DOCKER_SIZE_NOT_AOT.csproj" -c Release -o /app/publish  -r linux-musl-x64 --self-contained true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true /p:DeleteExistingFiles=true /p:TrimUnusedDependencies=true /p:PublishReadyToRun=true
+# -p:PublishAot=true
+RUN dotnet publish "DOT_NET_DOCKER_SIZE_NOT_AOT.csproj" -c Release -o /app/publish  -r linux-musl-x64 --self-contained true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true /p:DeleteExistingFiles=true /p:TrimUnusedDependencies=true -p:PublishTrimmed=true -p:PublishReadyToRun=true -p:StripSymbols=false
 
 
 FROM alpine:latest
@@ -35,8 +36,3 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["./DOT_NET_DOCKER_SIZE_NOT_AOT"]
 
-
-#FROM base AS final
-#WORKDIR /app
-#COPY --from=publish /app/publish .
-#ENTRYPOINT ["dotnet", "DOT_NET_DOCKER_SIZE_NOT_AOT.dll"]

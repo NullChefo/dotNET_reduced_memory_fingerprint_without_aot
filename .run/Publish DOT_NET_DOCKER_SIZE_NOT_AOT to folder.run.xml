@@ -1,6 +1,6 @@
-﻿<component name="ProjectRunConfigurationManager">
+<component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Publish DOT_NET_DOCKER_SIZE_NOT_AOT to folder" type="DotNetFolderPublish" factoryName="Publish to folder" editBeforeRun="true" focusToolWindowBeforeRun="true">
-    <riderPublish configuration="Release" delete_existing_files="true" include_native_libs_for_self_extract="true" platform="Any CPU" produce_single_file="true" ready_to_run="true" runtime="linux-musl-x64" self_contained="true" target_folder="$PROJECT_DIR$/DOT_NET_DOCKER_SIZE_NOT_AOT/bin/Release/net8.0/linux-musl-x64/publish" target_framework="net8.0" uuid_high="-9140072619238275765" uuid_low="-8147141268504689623" />
+    <riderPublish configuration="Release" delete_existing_files="true" include_native_libs_for_self_extract="true" platform="Any CPU" produce_single_file="true" ready_to_run="true" runtime="linux-musl-x64" self_contained="true" target_folder="$PROJECT_DIR$/DOT_NET_DOCKER_SIZE_NOT_AOT/bin/Release/net8.0/linux-musl-x64/publish" target_framework="net7.0" trim_unused_assemblies="true" uuid_high="-9140072619238275765" uuid_low="-8147141268504689623" />
     <method v="2" />
   </configuration>
 </component>
