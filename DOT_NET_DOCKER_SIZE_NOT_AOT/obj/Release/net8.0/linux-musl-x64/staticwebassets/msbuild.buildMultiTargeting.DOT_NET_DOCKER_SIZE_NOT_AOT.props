@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DOT_NET_DOCKER_SIZE_NOT_AOT.props" />
+</Project>

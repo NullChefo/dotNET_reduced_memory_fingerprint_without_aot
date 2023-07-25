@@ -1,0 +1,4 @@
+C:\Users\stefa\Developer\RiderProjects\DOT_NET_DOCKER_SIZE_NOT_AOT\DOT_NET_DOCKER_SIZE_NOT_AOT\bin\Release\net8.0\linux-musl-x64\publish\appsettings.Development.json
+C:\Users\stefa\Developer\RiderProjects\DOT_NET_DOCKER_SIZE_NOT_AOT\DOT_NET_DOCKER_SIZE_NOT_AOT\bin\Release\net8.0\linux-musl-x64\publish\appsettings.json
+C:\Users\stefa\Developer\RiderProjects\DOT_NET_DOCKER_SIZE_NOT_AOT\DOT_NET_DOCKER_SIZE_NOT_AOT\bin\Release\net8.0\linux-musl-x64\publish\DOT_NET_DOCKER_SIZE_NOT_AOT.pdb
+C:\Users\stefa\Developer\RiderProjects\DOT_NET_DOCKER_SIZE_NOT_AOT\DOT_NET_DOCKER_SIZE_NOT_AOT\bin\Release\net8.0\linux-musl-x64\publish\DOT_NET_DOCKER_SIZE_NOT_AOT
