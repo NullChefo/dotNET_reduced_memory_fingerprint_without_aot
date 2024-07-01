@@ -50,7 +50,7 @@ RUN dotnet publish "DOT_NET_DOCKER_SIZE_NOT_AOT.csproj" -c Release -o /app/publi
 #ENTRYPOINT ["./DOT_NET_DOCKER_SIZE_NOT_AOT"]
 
 
-FROM alpine:3.16
+FROM alpine:3
 
 RUN apk update && apk upgrade && \
     apk add --no-cache ca-certificates krb5-libs libgcc libintl libssl1.1 zlib libstdc++ lttng-ust tzdata userspace-rcu
